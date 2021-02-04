@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: gcs-location
+spec:
+  type: gcs
+  targets:
+    - gs://roadie-roadie-so-location/registry
