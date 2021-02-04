@@ -5,5 +5,6 @@ metadata:
 spec:
   type: url
   targets:
-    - https://github.com/RoadieHQ/sample-service/blob/main/catalog-info-1.yaml
-    - https://github.com/martina-if/sample-service/blob/master/backstage2.yaml
+    - https://storage.cloud.google.com/roadie-roadie-so-location/registry
+    #- https://github.com/RoadieHQ/sample-service/blob/main/catalog-info-1.yaml
+    #- https://github.com/martina-if/sample-service/blob/master/backstage2.yaml
