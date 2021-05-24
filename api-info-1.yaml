@@ -17,7 +17,7 @@ spec:
       description: Send errors to Rollbar or Sentry
 
     servers:
-      - url: https://localhost:7000/api/proxy
+      - url: http://localhost:7000/api/proxy/json/
         description: A plublic instance which anyone can hit to generate sample data.
 
     paths:
