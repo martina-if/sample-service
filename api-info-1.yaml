@@ -21,7 +21,7 @@ spec:
         description: A plublic instance which anyone can hit to generate sample data.
 
     paths:
-      /:
+      /issues:
         get:
           summary: Return Hello World
           responses:
@@ -34,7 +34,7 @@ spec:
                     example:
                       message: Hello world!
 
-      /json:
+      /comments:
         get:
           summary: Return json data
           responses:
