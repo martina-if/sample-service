@@ -23,7 +23,7 @@ spec:
     paths:
       /issues:
         get:
-          summary: Return all undecorated issues
+          summary: Return Hello World
           responses:
             '200':
               description: A JSON object with a message key and Hello World value.
@@ -36,7 +36,7 @@ spec:
 
       /comments:
         get:
-          summary: Return all comments
+          summary: Return json data World
           responses:
             '200':
               description: A JSON object with a message key and Hello World value.
@@ -46,31 +46,43 @@ spec:
                     type: object
                     example:
                       message: Hello world!
+      /debug-sentry:
+        post:
+          summary: Send an error to Sentry
 
-      /projects:
-        get:
-          summary: Return all projects
+          requestBody:
+            description: Optional error text to send to Sentry.
+            required: false
+            content:
+              application/json:
+                schema:
+                  type: object
+                example:
+                  errorMessage: My first Sentry Error
+
           responses:
             '200':
-              description: A JSON object with a message key and Hello World value.
+              description: Confirmation that the error was sent.
               content:
                 application/json:
                   schema:
                     type: object
                     example:
-                      message: Hello world!
-      /db:
-        get:
-          summary: db
-          responses:
-            '200':
-              description: A JSON object with a message key and Hello World value.
-              content:
-                application/json:
-                  schema:
-                    type: object
-                    example:
-                      message: Hello world!
+                      message: 'Error sent to Sentry: "My first error"'
+
+      /debug-rollbar:
+        post:
+          summary: Send an error to Rollbar
+
+          requestBody:
+            description: Optional error text to send to Rollbar.
+            required: false
+            content:
+              application/json:
+                schema:
+                  type: object
+                example:
+                  errorMessage: My first Rollbar Error
 
           responses:
             '200':
