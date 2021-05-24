@@ -34,6 +34,18 @@ spec:
                     example:
                       message: Hello world!
 
+      /json:
+        get:
+          summary: Return json data
+          responses:
+            '200':
+              description: A JSON object with a message key and Hello World value.
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    example:
+                      message: Hello world!
       /debug-sentry:
         post:
           summary: Send an error to Sentry
