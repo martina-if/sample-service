@@ -4,7 +4,7 @@ kind: Component
 metadata:
   name: sample-service
   annotations:
-    github.com/project-slug: RoadieHQ/sample-service
+    github.com/project-slug: martina-if/sample-service
 spec:
   type: other
   lifecycle: unknown

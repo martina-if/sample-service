@@ -6,7 +6,7 @@ metadata:
     A service for testing Backstage functionality. Configured for GitHub Actions and
     Sentry.
   annotations:
-    circleci.com/project-slug: github/RoadieHQ/CircleCITEst
+    circleci.com/project-slug: github/martina-if/CircleCITEst
     # The Sentry organization is stored in the app-config.yaml of the Backstage instance.
     sentry.io/project-slug: sample-service
     backstage.io/techdocs-ref: dir:./
