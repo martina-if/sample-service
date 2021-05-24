@@ -17,7 +17,7 @@ spec:
       description: Send errors to Rollbar or Sentry
 
     servers:
-      - url: https://sample-service.backstage-demo.roadie.io
+      - url: https://localhost:7000/api/proxy
         description: A plublic instance which anyone can hit to generate sample data.
 
     paths:
