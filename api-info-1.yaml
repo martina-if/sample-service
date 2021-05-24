@@ -49,7 +49,7 @@ spec:
 
       /projects:
         get:
-          summary: Return all comments
+          summary: Return all projects
           responses:
             '200':
               description: A JSON object with a message key and Hello World value.
@@ -61,7 +61,7 @@ spec:
                       message: Hello world!
       /db:
         get:
-          summary: Return all comments
+          summary: db
           responses:
             '200':
               description: A JSON object with a message key and Hello World value.
@@ -71,7 +71,6 @@ spec:
                     type: object
                     example:
                       message: Hello world!
-
 
           responses:
             '200':
